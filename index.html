@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sastre</title>
+    <meta name="description" content="Sastre Family Hub">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="bgCanvas"></canvas>
+
+    <svg width="0" height="0" style="display: none;">
+        <filter id="noiseFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+        </filter>
+    </svg>
+    <div class="noise-overlay"></div>
+
+    <div class="glow-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">SASTRE</h1>
+        </header>
+        <main class="gallery">
+            <div class="card-wrapper">
+                <a href="https://diego.sastre.uy" class="card" id="card-diego" aria-label="Diego Sastre">
+                    <div class="card-inner">
+                        <div class="card-bg"
+                            style="background-image: url('https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?q=80&w=2680&auto=format&fit=crop');">
+                        </div>
+                        <div class="card-avatar">
+                            <img src="diego.svg" alt="Diego" draggable="false">
+                        </div>
+                        <div class="card-content">
+                            <span class="prefix">01</span>
+                            <h2 class="name">Diego</h2>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-wrapper">
+                <a href="https://rodri.sastre.uy" class="card" id="card-rodri" aria-label="Rodri Sastre">
+                    <div class="card-inner">
+                        <div class="card-bg"
+                            style="background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop');">
+                        </div>
+                        <div class="card-avatar">
+                            <img src="rodri.svg" alt="Rodri" draggable="false">
+                        </div>
+                        <div class="card-content">
+                            <span class="prefix">02</span>
+                            <h2 class="name">Rodri</h2>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-wrapper">
+                <a href="https://nacho.sastre.uy" class="card" id="card-nacho" aria-label="Nacho Sastre">
+                    <div class="card-inner">
+                        <div class="card-bg"
+                            style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop');">
+                        </div>
+                        <div class="card-avatar">
+                            <img src="nacho.svg" alt="Nacho" draggable="false">
+                        </div>
+                        <div class="card-content">
+                            <span class="prefix">03</span>
+                            <h2 class="name">Nacho</h2>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
